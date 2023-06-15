@@ -8,7 +8,7 @@ import {
 const WalletButtons = () => {
   const { wallets, connect } = useWallet();
 
-  const walletView = (wallet) => {
+  const WalletView = ({ wallet }) => {
     const isWalletReady =
       wallet.readyState === WalletReadyState.Installed ||
       wallet.readyState === WalletReadyState.Loadable;
@@ -23,7 +23,7 @@ const WalletButtons = () => {
             key={wallet.name}
             onClick={() => connect(wallet.name)}
           >
-            <>{wallet.name}</>
+            {wallet.name}
           </button>
         );
       }
@@ -33,7 +33,7 @@ const WalletButtons = () => {
           disabled={true}
           key={wallet.name}
         >
-          <>{wallet.name} - Desktop Only</>
+          {wallet.name} - Desktop Only
         </button>
       );
     } else {
@@ -46,13 +46,13 @@ const WalletButtons = () => {
           key={wallet.name}
           onClick={() => connect(wallet.name)}
         >
-          <>{wallet.name}</>
+          {wallet.name}
         </button>
       );
     }
   };
 
-  return <>{wallets.map((wallet) => walletView(wallet))}</>;
+  return <>{wallets.map((wallet) => <WalletView key={wallet.name} wallet={wallet} />)}</>;
 };
 
 export default WalletButtons;
