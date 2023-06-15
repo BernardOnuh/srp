@@ -107,11 +107,10 @@ const Hero = () =>{
                             Buy $NBUL
                         </div>
                     </Link>
-                    <a href="/">
+                    
                         <div className="p-2 border hover:border-[#ff69b4] hover:text-[#ff69b4] rounded-md mr-2 cursor-pointer">
                             Stake $NBUL
                         </div>
-                    </a>
                     </div>
                 </div>
                 <div className=" wow slideInLeft ">
