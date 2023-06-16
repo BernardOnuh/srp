@@ -31,29 +31,17 @@ const Vote = ()=>{
                 </div>
             </div>
         </section>
-        <section className="mt-[0.5rem]  mx-auto px pt-[3rem] pb-[3rem] text-white">
-        <div className="flex gap-10 md:gap-0 flex-col md:flex-row w-full items-center justify-evenly">
-                <div className="wow fadeInUp w-[90%] md:w-[50%] px-14">
-                <p className="font-openSans mb-[1.2rem] text-[2.8rem] font-bold tex "> <span className=" text-[#ff69b4]">VOTE</span> </p>
-                    <p className="text-[1.3rem] mb-[1.2rem] font-medium text-gray-400">Weekly Voting. </p>
-                    <div className="my-[1.2rem] rounded bg-[#ff69b4]">
-                    <p className="text-white font-medium text-[1.2rem] p-5">
-                        Eligible users would be able to cast their vote in the poll and help Nebula make the right decision.
-                    </p>
-                    <h3 className="text-white font-medium text-[1.3rem] px-5">Question</h3>
-                    <p className="text-white font-normal text-[1.1rem] p-5">
-                        Should we airdrop tokens to all holders ?
-                    </p>
-
-                    <div className=" flex justify-between p-5"><button className="font-bold text-white bg-gray-500 rounded-md w-40 h-10">Yes</button> <button className="font-bold text-white bg-gray-500 rounded-md w-40 h-10">No</button></div>
-                    <button className="w-48 h-10 mb-5 mx-auto text-xl flex justify-center items-center font-bold text-white bg-black rounded-md">
-                        2500:VOTED
-                    </button>
-                    </div>           
-                   
-                </div>
-                   
-                </div> 
+        <section className="mt-[0.5rem]  mx-auto px pt-[3rem] pb-[3rem] text-white bg-black">
+        <div className="flex flex-col md:flex-row">
+      <div className="md:w-1/2 bg-black">
+        <h2>Page 1</h2>
+        {/* Add the content for page 1 */}
+      </div>
+      <div className="md:w-1/2 bg-black">
+        <h2>Page 2</h2>
+        {/* Add the content for page 2 */}
+      </div>
+    </div>  
             </section>
         </div>
             
