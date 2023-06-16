@@ -32,16 +32,16 @@ const Vote = ()=>{
             </div>
         </section>
         <section className="mt-[0.5rem]  mx-auto px pt-[3rem] pb-[3rem] text-white bg-black">
-        <div className="flex flex-col md:flex-row">
-      <div className="md:w-1/2 bg-black">
-        <h2>Page 1</h2>
-        {/* Add the content for page 1 */}
-      </div>
-      <div className="md:w-1/2 bg-black">
-        <h2>Page 2</h2>
-        {/* Add the content for page 2 */}
-      </div>
-    </div>  
+            <div className="flex flex-col md:flex-row px-5">
+                <div className="md:w-1/2 bg-black">
+                    <h2>Page 1</h2>
+                    {/* Add the content for page 1 */}
+                </div>
+                <div className="md:w-1/2 bg-black">
+                    <h2>Page 2</h2>
+                    {/* Add the content for page 2 */}
+                </div>
+                </div>  
             </section>
         </div>
             
